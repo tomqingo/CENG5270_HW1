@@ -1,0 +1,1 @@
+/data/ssd/hcli/usr/local/bin/g++   -Werror=return-type -O3 -DNDEBUG  -rdynamic -Wl,--whole-archive -rdynamic -ldl -lpthread -Wl,--no-whole-archive CMakeFiles/hw1.dir/Database.cpp.o CMakeFiles/hw1.dir/Partitioner.cpp.o CMakeFiles/hw1.dir/main.cpp.o  -o hw1  -lpthread 

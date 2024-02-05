@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/data/ssd/qluo/coarse/CENG5270/CENG5270_HW1/src/Database.h
+iostream
+-
+vector
+-
+unordered_map
+-
+string.h
+/data/ssd/qluo/coarse/CENG5270/CENG5270_HW1/src/string.h
+
+/data/ssd/qluo/coarse/CENG5270/CENG5270_HW1/src/Partitioner.h
+iostream
+-
+vector
+-
+memory
+-
+set
+-
+Database.h
+/data/ssd/qluo/coarse/CENG5270/CENG5270_HW1/src/Database.h
+
+/data/ssd/qluo/coarse/CENG5270/CENG5270_HW1/src/main.cpp
+string.h
+/data/ssd/qluo/coarse/CENG5270/CENG5270_HW1/src/string.h
+Partitioner.h
+/data/ssd/qluo/coarse/CENG5270/CENG5270_HW1/src/Partitioner.h
+ctime
+/data/ssd/qluo/coarse/CENG5270/CENG5270_HW1/src/ctime
+

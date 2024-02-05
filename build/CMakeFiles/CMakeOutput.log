@@ -1,0 +1,443 @@
+The system is: Linux - 4.15.0-158-generic - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /data/ssd/hcli/usr/local/bin/gcc 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is GNU, found in "/data/ssd/qluo/coarse/CENG5270/CENG5270_HW1/build/CMakeFiles/3.17.3/CompilerIdC/a.out"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /data/ssd/hcli/usr/local/bin/g++ 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is GNU, found in "/data/ssd/qluo/coarse/CENG5270/CENG5270_HW1/build/CMakeFiles/3.17.3/CompilerIdCXX/a.out"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: /data/ssd/qluo/coarse/CENG5270/CENG5270_HW1/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_2d896/fast && /usr/bin/make  -f CMakeFiles/cmTC_2d896.dir/build.make CMakeFiles/cmTC_2d896.dir/build
+make[1]: Entering directory '/data/ssd/qluo/coarse/CENG5270/CENG5270_HW1/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2d896.dir/testCCompiler.c.o
+/data/ssd/hcli/usr/local/bin/gcc    -o CMakeFiles/cmTC_2d896.dir/testCCompiler.c.o   -c /data/ssd/qluo/coarse/CENG5270/CENG5270_HW1/build/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_2d896
+/usr/local/cmake/cmake-3.17.3-Linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2d896.dir/link.txt --verbose=1
+/data/ssd/hcli/usr/local/bin/gcc      -rdynamic CMakeFiles/cmTC_2d896.dir/testCCompiler.c.o  -o cmTC_2d896 
+make[1]: Leaving directory '/data/ssd/qluo/coarse/CENG5270/CENG5270_HW1/build/CMakeFiles/CMakeTmp'
+
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /data/ssd/qluo/coarse/CENG5270/CENG5270_HW1/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_23434/fast && /usr/bin/make  -f CMakeFiles/cmTC_23434.dir/build.make CMakeFiles/cmTC_23434.dir/build
+make[1]: Entering directory '/data/ssd/qluo/coarse/CENG5270/CENG5270_HW1/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_23434.dir/CMakeCCompilerABI.c.o
+/data/ssd/hcli/usr/local/bin/gcc   -v -o CMakeFiles/cmTC_23434.dir/CMakeCCompilerABI.c.o   -c /usr/local/cmake/cmake-3.17.3-Linux-x86_64/share/cmake-3.17/Modules/CMakeCCompilerABI.c
+Using built-in specs.
+COLLECT_GCC=/data/ssd/hcli/usr/local/bin/gcc
+Target: x86_64-pc-linux-gnu
+Configured with: ../gcc-10.2.0/configure --prefix=/data/ssd/hcli/usr/local --disable-multilib
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 10.2.0 (GCC) 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_23434.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+ /data/ssd/hcli/usr/local/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/local/cmake/cmake-3.17.3-Linux-x86_64/share/cmake-3.17/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_23434.dir/CMakeCCompilerABI.c.o -version -o /tmp/cc5YbLpK.s
+GNU C17 (GCC) version 10.2.0 (x86_64-pc-linux-gnu)
+	compiled by GNU C version 10.2.0, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.18-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+ignoring nonexistent directory "/data/ssd/hcli/usr/local/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../x86_64-pc-linux-gnu/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /data/ssd/hcli/usr/local/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include
+ /usr/local/include
+ /data/ssd/hcli/usr/local/include
+ /data/ssd/hcli/usr/local/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include-fixed
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+GNU C17 (GCC) version 10.2.0 (x86_64-pc-linux-gnu)
+	compiled by GNU C version 10.2.0, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.18-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: 91da7cc3aaba26b54e6bff07b2b7d6a4
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_23434.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+ as -v --64 -o CMakeFiles/cmTC_23434.dir/CMakeCCompilerABI.c.o /tmp/cc5YbLpK.s
+GNU assembler version 2.30 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.30
+COMPILER_PATH=/data/ssd/hcli/usr/local/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/:/data/ssd/hcli/usr/local/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/:/data/ssd/hcli/usr/local/libexec/gcc/x86_64-pc-linux-gnu/:/data/ssd/hcli/usr/local/lib/gcc/x86_64-pc-linux-gnu/10.2.0/:/data/ssd/hcli/usr/local/lib/gcc/x86_64-pc-linux-gnu/
+LIBRARY_PATH=/data/ssd/hcli/usr/local/lib/gcc/x86_64-pc-linux-gnu/10.2.0/:/data/ssd/hcli/usr/local/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/data/ssd/hcli/usr/local/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_23434.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+Linking C executable cmTC_23434
+/usr/local/cmake/cmake-3.17.3-Linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_23434.dir/link.txt --verbose=1
+/data/ssd/hcli/usr/local/bin/gcc     -v -rdynamic CMakeFiles/cmTC_23434.dir/CMakeCCompilerABI.c.o  -o cmTC_23434 
+Using built-in specs.
+COLLECT_GCC=/data/ssd/hcli/usr/local/bin/gcc
+COLLECT_LTO_WRAPPER=/data/ssd/hcli/usr/local/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/lto-wrapper
+Target: x86_64-pc-linux-gnu
+Configured with: ../gcc-10.2.0/configure --prefix=/data/ssd/hcli/usr/local --disable-multilib
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 10.2.0 (GCC) 
+COMPILER_PATH=/data/ssd/hcli/usr/local/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/:/data/ssd/hcli/usr/local/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/:/data/ssd/hcli/usr/local/libexec/gcc/x86_64-pc-linux-gnu/:/data/ssd/hcli/usr/local/lib/gcc/x86_64-pc-linux-gnu/10.2.0/:/data/ssd/hcli/usr/local/lib/gcc/x86_64-pc-linux-gnu/
+LIBRARY_PATH=/data/ssd/hcli/usr/local/lib/gcc/x86_64-pc-linux-gnu/10.2.0/:/data/ssd/hcli/usr/local/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/data/ssd/hcli/usr/local/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_23434' '-mtune=generic' '-march=x86-64'
+ /data/ssd/hcli/usr/local/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/collect2 -plugin /data/ssd/hcli/usr/local/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/liblto_plugin.so -plugin-opt=/data/ssd/hcli/usr/local/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccFZmQUL.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --eh-frame-hdr -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_23434 /usr/lib/x86_64-linux-gnu/crt1.o /usr/lib/x86_64-linux-gnu/crti.o /data/ssd/hcli/usr/local/lib/gcc/x86_64-pc-linux-gnu/10.2.0/crtbegin.o -L/data/ssd/hcli/usr/local/lib/gcc/x86_64-pc-linux-gnu/10.2.0 -L/data/ssd/hcli/usr/local/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/data/ssd/hcli/usr/local/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../.. CMakeFiles/cmTC_23434.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /data/ssd/hcli/usr/local/lib/gcc/x86_64-pc-linux-gnu/10.2.0/crtend.o /usr/lib/x86_64-linux-gnu/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_23434' '-mtune=generic' '-march=x86-64'
+make[1]: Leaving directory '/data/ssd/qluo/coarse/CENG5270/CENG5270_HW1/build/CMakeFiles/CMakeTmp'
+
+
+
+Parsed C implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/data/ssd/hcli/usr/local/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include]
+    add: [/usr/local/include]
+    add: [/data/ssd/hcli/usr/local/include]
+    add: [/data/ssd/hcli/usr/local/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include-fixed]
+    add: [/usr/include/x86_64-linux-gnu]
+    add: [/usr/include]
+  end of search list found
+  collapse include dir [/data/ssd/hcli/usr/local/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include] ==> [/data/ssd/hcli/usr/local/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include]
+  collapse include dir [/usr/local/include] ==> [/usr/local/include]
+  collapse include dir [/data/ssd/hcli/usr/local/include] ==> [/data/ssd/hcli/usr/local/include]
+  collapse include dir [/data/ssd/hcli/usr/local/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include-fixed] ==> [/data/ssd/hcli/usr/local/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include-fixed]
+  collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+  collapse include dir [/usr/include] ==> [/usr/include]
+  implicit include dirs: [/data/ssd/hcli/usr/local/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include;/usr/local/include;/data/ssd/hcli/usr/local/include;/data/ssd/hcli/usr/local/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include-fixed;/usr/include/x86_64-linux-gnu;/usr/include]
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /data/ssd/qluo/coarse/CENG5270/CENG5270_HW1/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/make cmTC_23434/fast && /usr/bin/make  -f CMakeFiles/cmTC_23434.dir/build.make CMakeFiles/cmTC_23434.dir/build]
+  ignore line: [make[1]: Entering directory '/data/ssd/qluo/coarse/CENG5270/CENG5270_HW1/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_23434.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/data/ssd/hcli/usr/local/bin/gcc   -v -o CMakeFiles/cmTC_23434.dir/CMakeCCompilerABI.c.o   -c /usr/local/cmake/cmake-3.17.3-Linux-x86_64/share/cmake-3.17/Modules/CMakeCCompilerABI.c]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/data/ssd/hcli/usr/local/bin/gcc]
+  ignore line: [Target: x86_64-pc-linux-gnu]
+  ignore line: [Configured with: ../gcc-10.2.0/configure --prefix=/data/ssd/hcli/usr/local --disable-multilib]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib]
+  ignore line: [gcc version 10.2.0 (GCC) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_23434.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+  ignore line: [ /data/ssd/hcli/usr/local/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/local/cmake/cmake-3.17.3-Linux-x86_64/share/cmake-3.17/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_23434.dir/CMakeCCompilerABI.c.o -version -o /tmp/cc5YbLpK.s]
+  ignore line: [GNU C17 (GCC) version 10.2.0 (x86_64-pc-linux-gnu)]
+  ignore line: [	compiled by GNU C version 10.2.0  GMP version 6.1.0  MPFR version 3.1.4  MPC version 1.0.3  isl version isl-0.18-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
+  ignore line: [ignoring nonexistent directory "/data/ssd/hcli/usr/local/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../x86_64-pc-linux-gnu/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /data/ssd/hcli/usr/local/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include]
+  ignore line: [ /usr/local/include]
+  ignore line: [ /data/ssd/hcli/usr/local/include]
+  ignore line: [ /data/ssd/hcli/usr/local/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include-fixed]
+  ignore line: [ /usr/include/x86_64-linux-gnu]
+  ignore line: [ /usr/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU C17 (GCC) version 10.2.0 (x86_64-pc-linux-gnu)]
+  ignore line: [	compiled by GNU C version 10.2.0  GMP version 6.1.0  MPFR version 3.1.4  MPC version 1.0.3  isl version isl-0.18-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: 91da7cc3aaba26b54e6bff07b2b7d6a4]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_23434.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+  ignore line: [ as -v --64 -o CMakeFiles/cmTC_23434.dir/CMakeCCompilerABI.c.o /tmp/cc5YbLpK.s]
+  ignore line: [GNU assembler version 2.30 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.30]
+  ignore line: [COMPILER_PATH=/data/ssd/hcli/usr/local/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/:/data/ssd/hcli/usr/local/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/:/data/ssd/hcli/usr/local/libexec/gcc/x86_64-pc-linux-gnu/:/data/ssd/hcli/usr/local/lib/gcc/x86_64-pc-linux-gnu/10.2.0/:/data/ssd/hcli/usr/local/lib/gcc/x86_64-pc-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/data/ssd/hcli/usr/local/lib/gcc/x86_64-pc-linux-gnu/10.2.0/:/data/ssd/hcli/usr/local/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/data/ssd/hcli/usr/local/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_23434.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+  ignore line: [Linking C executable cmTC_23434]
+  ignore line: [/usr/local/cmake/cmake-3.17.3-Linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_23434.dir/link.txt --verbose=1]
+  ignore line: [/data/ssd/hcli/usr/local/bin/gcc     -v -rdynamic CMakeFiles/cmTC_23434.dir/CMakeCCompilerABI.c.o  -o cmTC_23434 ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/data/ssd/hcli/usr/local/bin/gcc]
+  ignore line: [COLLECT_LTO_WRAPPER=/data/ssd/hcli/usr/local/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/lto-wrapper]
+  ignore line: [Target: x86_64-pc-linux-gnu]
+  ignore line: [Configured with: ../gcc-10.2.0/configure --prefix=/data/ssd/hcli/usr/local --disable-multilib]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib]
+  ignore line: [gcc version 10.2.0 (GCC) ]
+  ignore line: [COMPILER_PATH=/data/ssd/hcli/usr/local/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/:/data/ssd/hcli/usr/local/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/:/data/ssd/hcli/usr/local/libexec/gcc/x86_64-pc-linux-gnu/:/data/ssd/hcli/usr/local/lib/gcc/x86_64-pc-linux-gnu/10.2.0/:/data/ssd/hcli/usr/local/lib/gcc/x86_64-pc-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/data/ssd/hcli/usr/local/lib/gcc/x86_64-pc-linux-gnu/10.2.0/:/data/ssd/hcli/usr/local/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/data/ssd/hcli/usr/local/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_23434' '-mtune=generic' '-march=x86-64']
+  link line: [ /data/ssd/hcli/usr/local/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/collect2 -plugin /data/ssd/hcli/usr/local/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/liblto_plugin.so -plugin-opt=/data/ssd/hcli/usr/local/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccFZmQUL.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --eh-frame-hdr -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_23434 /usr/lib/x86_64-linux-gnu/crt1.o /usr/lib/x86_64-linux-gnu/crti.o /data/ssd/hcli/usr/local/lib/gcc/x86_64-pc-linux-gnu/10.2.0/crtbegin.o -L/data/ssd/hcli/usr/local/lib/gcc/x86_64-pc-linux-gnu/10.2.0 -L/data/ssd/hcli/usr/local/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/data/ssd/hcli/usr/local/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../.. CMakeFiles/cmTC_23434.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /data/ssd/hcli/usr/local/lib/gcc/x86_64-pc-linux-gnu/10.2.0/crtend.o /usr/lib/x86_64-linux-gnu/crtn.o]
+    arg [/data/ssd/hcli/usr/local/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/data/ssd/hcli/usr/local/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/data/ssd/hcli/usr/local/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccFZmQUL.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_23434] ==> ignore
+    arg [/usr/lib/x86_64-linux-gnu/crt1.o] ==> ignore
+    arg [/usr/lib/x86_64-linux-gnu/crti.o] ==> ignore
+    arg [/data/ssd/hcli/usr/local/lib/gcc/x86_64-pc-linux-gnu/10.2.0/crtbegin.o] ==> ignore
+    arg [-L/data/ssd/hcli/usr/local/lib/gcc/x86_64-pc-linux-gnu/10.2.0] ==> dir [/data/ssd/hcli/usr/local/lib/gcc/x86_64-pc-linux-gnu/10.2.0]
+    arg [-L/data/ssd/hcli/usr/local/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../lib64] ==> dir [/data/ssd/hcli/usr/local/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../lib64]
+    arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+    arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+    arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+    arg [-L/data/ssd/hcli/usr/local/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../..] ==> dir [/data/ssd/hcli/usr/local/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../..]
+    arg [CMakeFiles/cmTC_23434.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [/data/ssd/hcli/usr/local/lib/gcc/x86_64-pc-linux-gnu/10.2.0/crtend.o] ==> ignore
+    arg [/usr/lib/x86_64-linux-gnu/crtn.o] ==> ignore
+  collapse library dir [/data/ssd/hcli/usr/local/lib/gcc/x86_64-pc-linux-gnu/10.2.0] ==> [/data/ssd/hcli/usr/local/lib/gcc/x86_64-pc-linux-gnu/10.2.0]
+  collapse library dir [/data/ssd/hcli/usr/local/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../lib64] ==> [/data/ssd/hcli/usr/local/lib64]
+  collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+  collapse library dir [/lib/../lib64] ==> [/lib64]
+  collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/data/ssd/hcli/usr/local/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../..] ==> [/data/ssd/hcli/usr/local/lib]
+  implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+  implicit dirs: [/data/ssd/hcli/usr/local/lib/gcc/x86_64-pc-linux-gnu/10.2.0;/data/ssd/hcli/usr/local/lib64;/lib/x86_64-linux-gnu;/lib64;/usr/lib/x86_64-linux-gnu;/data/ssd/hcli/usr/local/lib]
+  implicit fwks: []
+
+
+Determining if the CXX compiler works passed with the following output:
+Change Dir: /data/ssd/qluo/coarse/CENG5270/CENG5270_HW1/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_9eb7b/fast && /usr/bin/make  -f CMakeFiles/cmTC_9eb7b.dir/build.make CMakeFiles/cmTC_9eb7b.dir/build
+make[1]: Entering directory '/data/ssd/qluo/coarse/CENG5270/CENG5270_HW1/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_9eb7b.dir/testCXXCompiler.cxx.o
+/data/ssd/hcli/usr/local/bin/g++     -o CMakeFiles/cmTC_9eb7b.dir/testCXXCompiler.cxx.o -c /data/ssd/qluo/coarse/CENG5270/CENG5270_HW1/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_9eb7b
+/usr/local/cmake/cmake-3.17.3-Linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9eb7b.dir/link.txt --verbose=1
+/data/ssd/hcli/usr/local/bin/g++       -rdynamic CMakeFiles/cmTC_9eb7b.dir/testCXXCompiler.cxx.o  -o cmTC_9eb7b 
+make[1]: Leaving directory '/data/ssd/qluo/coarse/CENG5270/CENG5270_HW1/build/CMakeFiles/CMakeTmp'
+
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /data/ssd/qluo/coarse/CENG5270/CENG5270_HW1/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_822fb/fast && /usr/bin/make  -f CMakeFiles/cmTC_822fb.dir/build.make CMakeFiles/cmTC_822fb.dir/build
+make[1]: Entering directory '/data/ssd/qluo/coarse/CENG5270/CENG5270_HW1/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_822fb.dir/CMakeCXXCompilerABI.cpp.o
+/data/ssd/hcli/usr/local/bin/g++    -v -o CMakeFiles/cmTC_822fb.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/cmake/cmake-3.17.3-Linux-x86_64/share/cmake-3.17/Modules/CMakeCXXCompilerABI.cpp
+Using built-in specs.
+COLLECT_GCC=/data/ssd/hcli/usr/local/bin/g++
+Target: x86_64-pc-linux-gnu
+Configured with: ../gcc-10.2.0/configure --prefix=/data/ssd/hcli/usr/local --disable-multilib
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 10.2.0 (GCC) 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_822fb.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /data/ssd/hcli/usr/local/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/local/cmake/cmake-3.17.3-Linux-x86_64/share/cmake-3.17/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_822fb.dir/CMakeCXXCompilerABI.cpp.o -version -o /tmp/cchJ7IS8.s
+GNU C++14 (GCC) version 10.2.0 (x86_64-pc-linux-gnu)
+	compiled by GNU C version 10.2.0, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.18-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+ignoring nonexistent directory "/data/ssd/hcli/usr/local/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../x86_64-pc-linux-gnu/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /data/ssd/hcli/usr/local/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0
+ /data/ssd/hcli/usr/local/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0/x86_64-pc-linux-gnu
+ /data/ssd/hcli/usr/local/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0/backward
+ /data/ssd/hcli/usr/local/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include
+ /usr/local/include
+ /data/ssd/hcli/usr/local/include
+ /data/ssd/hcli/usr/local/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include-fixed
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+GNU C++14 (GCC) version 10.2.0 (x86_64-pc-linux-gnu)
+	compiled by GNU C version 10.2.0, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.18-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: 75f291ddb0c99c78a732495982f1f14e
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_822fb.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ as -v --64 -o CMakeFiles/cmTC_822fb.dir/CMakeCXXCompilerABI.cpp.o /tmp/cchJ7IS8.s
+GNU assembler version 2.30 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.30
+COMPILER_PATH=/data/ssd/hcli/usr/local/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/:/data/ssd/hcli/usr/local/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/:/data/ssd/hcli/usr/local/libexec/gcc/x86_64-pc-linux-gnu/:/data/ssd/hcli/usr/local/lib/gcc/x86_64-pc-linux-gnu/10.2.0/:/data/ssd/hcli/usr/local/lib/gcc/x86_64-pc-linux-gnu/
+LIBRARY_PATH=/data/ssd/hcli/usr/local/lib/gcc/x86_64-pc-linux-gnu/10.2.0/:/data/ssd/hcli/usr/local/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/data/ssd/hcli/usr/local/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_822fb.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+Linking CXX executable cmTC_822fb
+/usr/local/cmake/cmake-3.17.3-Linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_822fb.dir/link.txt --verbose=1
+/data/ssd/hcli/usr/local/bin/g++      -v -rdynamic CMakeFiles/cmTC_822fb.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_822fb 
+Using built-in specs.
+COLLECT_GCC=/data/ssd/hcli/usr/local/bin/g++
+COLLECT_LTO_WRAPPER=/data/ssd/hcli/usr/local/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/lto-wrapper
+Target: x86_64-pc-linux-gnu
+Configured with: ../gcc-10.2.0/configure --prefix=/data/ssd/hcli/usr/local --disable-multilib
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 10.2.0 (GCC) 
+COMPILER_PATH=/data/ssd/hcli/usr/local/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/:/data/ssd/hcli/usr/local/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/:/data/ssd/hcli/usr/local/libexec/gcc/x86_64-pc-linux-gnu/:/data/ssd/hcli/usr/local/lib/gcc/x86_64-pc-linux-gnu/10.2.0/:/data/ssd/hcli/usr/local/lib/gcc/x86_64-pc-linux-gnu/
+LIBRARY_PATH=/data/ssd/hcli/usr/local/lib/gcc/x86_64-pc-linux-gnu/10.2.0/:/data/ssd/hcli/usr/local/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/data/ssd/hcli/usr/local/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_822fb' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /data/ssd/hcli/usr/local/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/collect2 -plugin /data/ssd/hcli/usr/local/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/liblto_plugin.so -plugin-opt=/data/ssd/hcli/usr/local/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc9Pzs98.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_822fb /usr/lib/x86_64-linux-gnu/crt1.o /usr/lib/x86_64-linux-gnu/crti.o /data/ssd/hcli/usr/local/lib/gcc/x86_64-pc-linux-gnu/10.2.0/crtbegin.o -L/data/ssd/hcli/usr/local/lib/gcc/x86_64-pc-linux-gnu/10.2.0 -L/data/ssd/hcli/usr/local/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/data/ssd/hcli/usr/local/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../.. CMakeFiles/cmTC_822fb.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /data/ssd/hcli/usr/local/lib/gcc/x86_64-pc-linux-gnu/10.2.0/crtend.o /usr/lib/x86_64-linux-gnu/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_822fb' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+make[1]: Leaving directory '/data/ssd/qluo/coarse/CENG5270/CENG5270_HW1/build/CMakeFiles/CMakeTmp'
+
+
+
+Parsed CXX implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/data/ssd/hcli/usr/local/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0]
+    add: [/data/ssd/hcli/usr/local/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0/x86_64-pc-linux-gnu]
+    add: [/data/ssd/hcli/usr/local/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0/backward]
+    add: [/data/ssd/hcli/usr/local/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include]
+    add: [/usr/local/include]
+    add: [/data/ssd/hcli/usr/local/include]
+    add: [/data/ssd/hcli/usr/local/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include-fixed]
+    add: [/usr/include/x86_64-linux-gnu]
+    add: [/usr/include]
+  end of search list found
+  collapse include dir [/data/ssd/hcli/usr/local/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0] ==> [/data/ssd/hcli/usr/local/include/c++/10.2.0]
+  collapse include dir [/data/ssd/hcli/usr/local/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0/x86_64-pc-linux-gnu] ==> [/data/ssd/hcli/usr/local/include/c++/10.2.0/x86_64-pc-linux-gnu]
+  collapse include dir [/data/ssd/hcli/usr/local/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0/backward] ==> [/data/ssd/hcli/usr/local/include/c++/10.2.0/backward]
+  collapse include dir [/data/ssd/hcli/usr/local/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include] ==> [/data/ssd/hcli/usr/local/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include]
+  collapse include dir [/usr/local/include] ==> [/usr/local/include]
+  collapse include dir [/data/ssd/hcli/usr/local/include] ==> [/data/ssd/hcli/usr/local/include]
+  collapse include dir [/data/ssd/hcli/usr/local/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include-fixed] ==> [/data/ssd/hcli/usr/local/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include-fixed]
+  collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+  collapse include dir [/usr/include] ==> [/usr/include]
+  implicit include dirs: [/data/ssd/hcli/usr/local/include/c++/10.2.0;/data/ssd/hcli/usr/local/include/c++/10.2.0/x86_64-pc-linux-gnu;/data/ssd/hcli/usr/local/include/c++/10.2.0/backward;/data/ssd/hcli/usr/local/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include;/usr/local/include;/data/ssd/hcli/usr/local/include;/data/ssd/hcli/usr/local/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include-fixed;/usr/include/x86_64-linux-gnu;/usr/include]
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /data/ssd/qluo/coarse/CENG5270/CENG5270_HW1/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/make cmTC_822fb/fast && /usr/bin/make  -f CMakeFiles/cmTC_822fb.dir/build.make CMakeFiles/cmTC_822fb.dir/build]
+  ignore line: [make[1]: Entering directory '/data/ssd/qluo/coarse/CENG5270/CENG5270_HW1/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_822fb.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/data/ssd/hcli/usr/local/bin/g++    -v -o CMakeFiles/cmTC_822fb.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/cmake/cmake-3.17.3-Linux-x86_64/share/cmake-3.17/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/data/ssd/hcli/usr/local/bin/g++]
+  ignore line: [Target: x86_64-pc-linux-gnu]
+  ignore line: [Configured with: ../gcc-10.2.0/configure --prefix=/data/ssd/hcli/usr/local --disable-multilib]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib]
+  ignore line: [gcc version 10.2.0 (GCC) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_822fb.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  ignore line: [ /data/ssd/hcli/usr/local/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/local/cmake/cmake-3.17.3-Linux-x86_64/share/cmake-3.17/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_822fb.dir/CMakeCXXCompilerABI.cpp.o -version -o /tmp/cchJ7IS8.s]
+  ignore line: [GNU C++14 (GCC) version 10.2.0 (x86_64-pc-linux-gnu)]
+  ignore line: [	compiled by GNU C version 10.2.0  GMP version 6.1.0  MPFR version 3.1.4  MPC version 1.0.3  isl version isl-0.18-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
+  ignore line: [ignoring nonexistent directory "/data/ssd/hcli/usr/local/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../x86_64-pc-linux-gnu/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /data/ssd/hcli/usr/local/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0]
+  ignore line: [ /data/ssd/hcli/usr/local/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0/x86_64-pc-linux-gnu]
+  ignore line: [ /data/ssd/hcli/usr/local/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0/backward]
+  ignore line: [ /data/ssd/hcli/usr/local/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include]
+  ignore line: [ /usr/local/include]
+  ignore line: [ /data/ssd/hcli/usr/local/include]
+  ignore line: [ /data/ssd/hcli/usr/local/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include-fixed]
+  ignore line: [ /usr/include/x86_64-linux-gnu]
+  ignore line: [ /usr/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU C++14 (GCC) version 10.2.0 (x86_64-pc-linux-gnu)]
+  ignore line: [	compiled by GNU C version 10.2.0  GMP version 6.1.0  MPFR version 3.1.4  MPC version 1.0.3  isl version isl-0.18-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: 75f291ddb0c99c78a732495982f1f14e]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_822fb.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  ignore line: [ as -v --64 -o CMakeFiles/cmTC_822fb.dir/CMakeCXXCompilerABI.cpp.o /tmp/cchJ7IS8.s]
+  ignore line: [GNU assembler version 2.30 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.30]
+  ignore line: [COMPILER_PATH=/data/ssd/hcli/usr/local/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/:/data/ssd/hcli/usr/local/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/:/data/ssd/hcli/usr/local/libexec/gcc/x86_64-pc-linux-gnu/:/data/ssd/hcli/usr/local/lib/gcc/x86_64-pc-linux-gnu/10.2.0/:/data/ssd/hcli/usr/local/lib/gcc/x86_64-pc-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/data/ssd/hcli/usr/local/lib/gcc/x86_64-pc-linux-gnu/10.2.0/:/data/ssd/hcli/usr/local/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/data/ssd/hcli/usr/local/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_822fb.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  ignore line: [Linking CXX executable cmTC_822fb]
+  ignore line: [/usr/local/cmake/cmake-3.17.3-Linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_822fb.dir/link.txt --verbose=1]
+  ignore line: [/data/ssd/hcli/usr/local/bin/g++      -v -rdynamic CMakeFiles/cmTC_822fb.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_822fb ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/data/ssd/hcli/usr/local/bin/g++]
+  ignore line: [COLLECT_LTO_WRAPPER=/data/ssd/hcli/usr/local/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/lto-wrapper]
+  ignore line: [Target: x86_64-pc-linux-gnu]
+  ignore line: [Configured with: ../gcc-10.2.0/configure --prefix=/data/ssd/hcli/usr/local --disable-multilib]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib]
+  ignore line: [gcc version 10.2.0 (GCC) ]
+  ignore line: [COMPILER_PATH=/data/ssd/hcli/usr/local/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/:/data/ssd/hcli/usr/local/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/:/data/ssd/hcli/usr/local/libexec/gcc/x86_64-pc-linux-gnu/:/data/ssd/hcli/usr/local/lib/gcc/x86_64-pc-linux-gnu/10.2.0/:/data/ssd/hcli/usr/local/lib/gcc/x86_64-pc-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/data/ssd/hcli/usr/local/lib/gcc/x86_64-pc-linux-gnu/10.2.0/:/data/ssd/hcli/usr/local/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/data/ssd/hcli/usr/local/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_822fb' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  link line: [ /data/ssd/hcli/usr/local/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/collect2 -plugin /data/ssd/hcli/usr/local/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/liblto_plugin.so -plugin-opt=/data/ssd/hcli/usr/local/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc9Pzs98.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_822fb /usr/lib/x86_64-linux-gnu/crt1.o /usr/lib/x86_64-linux-gnu/crti.o /data/ssd/hcli/usr/local/lib/gcc/x86_64-pc-linux-gnu/10.2.0/crtbegin.o -L/data/ssd/hcli/usr/local/lib/gcc/x86_64-pc-linux-gnu/10.2.0 -L/data/ssd/hcli/usr/local/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/data/ssd/hcli/usr/local/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../.. CMakeFiles/cmTC_822fb.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /data/ssd/hcli/usr/local/lib/gcc/x86_64-pc-linux-gnu/10.2.0/crtend.o /usr/lib/x86_64-linux-gnu/crtn.o]
+    arg [/data/ssd/hcli/usr/local/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/data/ssd/hcli/usr/local/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/data/ssd/hcli/usr/local/libexec/gcc/x86_64-pc-linux-gnu/10.2.0/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/cc9Pzs98.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_822fb] ==> ignore
+    arg [/usr/lib/x86_64-linux-gnu/crt1.o] ==> ignore
+    arg [/usr/lib/x86_64-linux-gnu/crti.o] ==> ignore
+    arg [/data/ssd/hcli/usr/local/lib/gcc/x86_64-pc-linux-gnu/10.2.0/crtbegin.o] ==> ignore
+    arg [-L/data/ssd/hcli/usr/local/lib/gcc/x86_64-pc-linux-gnu/10.2.0] ==> dir [/data/ssd/hcli/usr/local/lib/gcc/x86_64-pc-linux-gnu/10.2.0]
+    arg [-L/data/ssd/hcli/usr/local/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../lib64] ==> dir [/data/ssd/hcli/usr/local/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../lib64]
+    arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+    arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+    arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+    arg [-L/data/ssd/hcli/usr/local/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../..] ==> dir [/data/ssd/hcli/usr/local/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../..]
+    arg [CMakeFiles/cmTC_822fb.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-lstdc++] ==> lib [stdc++]
+    arg [-lm] ==> lib [m]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [/data/ssd/hcli/usr/local/lib/gcc/x86_64-pc-linux-gnu/10.2.0/crtend.o] ==> ignore
+    arg [/usr/lib/x86_64-linux-gnu/crtn.o] ==> ignore
+  collapse library dir [/data/ssd/hcli/usr/local/lib/gcc/x86_64-pc-linux-gnu/10.2.0] ==> [/data/ssd/hcli/usr/local/lib/gcc/x86_64-pc-linux-gnu/10.2.0]
+  collapse library dir [/data/ssd/hcli/usr/local/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../lib64] ==> [/data/ssd/hcli/usr/local/lib64]
+  collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+  collapse library dir [/lib/../lib64] ==> [/lib64]
+  collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/data/ssd/hcli/usr/local/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../..] ==> [/data/ssd/hcli/usr/local/lib]
+  implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+  implicit dirs: [/data/ssd/hcli/usr/local/lib/gcc/x86_64-pc-linux-gnu/10.2.0;/data/ssd/hcli/usr/local/lib64;/lib/x86_64-linux-gnu;/lib64;/usr/lib/x86_64-linux-gnu;/data/ssd/hcli/usr/local/lib]
+  implicit fwks: []
+
+
