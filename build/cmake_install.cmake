@@ -1,4 +1,4 @@
-# Install script for directory: /data/ssd/qluo/coarse/CENG5270/CENG5270_HW1/src
+# Install script for directory: /data/ssd/qluo/coarse/CENG5270/HW1/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/data/ssd/qluo/coarse/CENG5270/CENG5270_HW1/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/data/ssd/qluo/coarse/CENG5270/HW1/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -6,5 +6,5 @@ CXX_FLAGS =  -Werror=return-type -O3 -DNDEBUG   -std=gnu++14
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/data/ssd/qluo/coarse/CENG5270/CENG5270_HW1/build -I/data/ssd/qluo/coarse/CENG5270/CENG5270_HW1/src 
+CXX_INCLUDES = -I/data/ssd/qluo/coarse/CENG5270/HW1/build -I/data/ssd/qluo/coarse/CENG5270/HW1/src 
 

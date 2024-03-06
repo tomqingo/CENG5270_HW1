@@ -10,7 +10,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.17.3/CMakeCCompiler.cmake"
   "CMakeFiles/3.17.3/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.17.3/CMakeSystem.cmake"
-  "/data/ssd/qluo/coarse/CENG5270/CENG5270_HW1/src/CMakeLists.txt"
+  "/data/ssd/qluo/coarse/CENG5270/HW1/src/CMakeLists.txt"
   "/usr/local/cmake/cmake-3.17.3-Linux-x86_64/share/cmake-3.17/Modules/CMakeCInformation.cmake"
   "/usr/local/cmake/cmake-3.17.3-Linux-x86_64/share/cmake-3.17/Modules/CMakeCXXInformation.cmake"
   "/usr/local/cmake/cmake-3.17.3-Linux-x86_64/share/cmake-3.17/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake"

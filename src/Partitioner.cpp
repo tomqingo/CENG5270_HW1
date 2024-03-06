@@ -72,18 +72,6 @@ void Partitioner::initPart()
         cellPartitions.push_back(partid);
         Partitions[partid].addNodes(NodeClusterLevels.back()[i]);
     }
-    
-    for(auto netcluster : NetClusterLevels.back())
-    {
-        netcluster->partitionPinCnt.resize(2,0);
-        netcluster->partitionPin.resize(2);
-        for (auto nodecluster : netcluster->pins)
-        {
-            partid = cellPartitions[nodecluster->id];
-            netcluster->partitionPinCnt[partid]++;
-            netcluster->partitionPin[partid].insert(nodecluster);
-        }
-    }
 
     // Print the Partitioning results
     std::cout<<"Before Bipartitioning"<<std::endl;
@@ -126,94 +114,130 @@ void Partitioner::FMadjust(int level)
     auto &netclusters = NetClusterLevels[level];
 
     // The best FM iterations
+
     vector<int> bestcellPartitions;
+    // Judge the Gain
     int bestgain;
-    int gainsum = 0;
-    vector<int> gaincol;
-    vector<int> gainsuffixcol;
-    vector<string> movenode;
+    vector<int> bestgaincol;
 
-    // The net clusters
-    vector<int> gain(clusters.size(), 0);
+    int cnt = 0;
 
-    // The bucket list
-    vector<Move> MoveCol;
-    int Pmax = 0;
-    for (auto node : clusters)
+    do
     {
-        if (node->nets.size() > Pmax)
-            Pmax = node->nets.size();
-    }
-    bestgain = -1000000;
+        int gainsum = 0;
+        vector<int> gaincol;
+        vector<int> gainsuffixcol;
+        vector<string> movenode;
 
-    for (int i = 0; i < 2*Pmax + 1; i++)
-    {
-        int gain_per = -Pmax + i;
-        MoveCol.emplace_back(gain_per);
-    }
+        // The net clusters
+        vector<int> gain(clusters.size(), 0);
 
-    // Set all the nodes unlocked, initialize the move gains
-    for (auto node : clusters)
-    {
-        node->locked = false;
-        initializeGain(gain, node);
-        MoveCol[Pmax+gain[node->id]].addCandidateNodes(node);
-    }
-
-    // Choose the node with the best gain, and then move and update the Gains
-    int NumNodesMove = 0;
-
-    while(NumNodesMove < clusters.size())
-    {
-        // Find the largest Gain from the bucket list
-        shared_ptr<NodeCluster> nodewithlargsetGain;
-        int largestGain;
-        int partid;
-
-        // Find the largest Gain From the top to the end
-        for(int i = 2*Pmax; i >= 0; i--)
+        // The bucket list
+        vector<Move> MoveCol;
+        int Pmax = 0;
+        for (auto node : clusters)
         {
-            if(MoveCol[i].NodeSetSize() != 0)
+            if (node->nets.size() > Pmax)
+                Pmax = node->nets.size();
+        }
+        // best gains
+        bestgain = -1000000;
+
+
+        for (int i = 0; i < 2*Pmax + 1; i++)
+        {
+            int gain_per = -Pmax + i;
+            MoveCol.emplace_back(gain_per);
+        }
+
+        for(auto netcluster : NetClusterLevels.back())
+        {
+            netcluster->partitionPinCnt.clear();
+            netcluster->partitionPinCnt.resize(2,0);
+            netcluster->partitionPin.clear();
+            netcluster->partitionPin.resize(2);
+            for (auto nodecluster : netcluster->pins)
             {
-                auto candidate =  *(MoveCol[i].candidateNodes.begin());
-                partid = cellPartitions[candidate->id];
-                nodewithlargsetGain = candidate;
-                largestGain = -Pmax + i;
-                break;
+                int partid = cellPartitions[nodecluster->id];
+                netcluster->partitionPinCnt[partid]++;
+                netcluster->partitionPin[partid].insert(nodecluster);
             }
         }
 
-        // update the node locations
-        MoveCol[largestGain+Pmax].deleteCandidateNodes(nodewithlargsetGain);
-        nodewithlargsetGain->locked = true;
-        NumNodesMove++;
-
-        // update the gains
-        updateGain(gain, nodewithlargsetGain, MoveCol);
-        Partitions[partid].deleteNodes(nodewithlargsetGain);
-        Partitions[1-partid].addNodes(nodewithlargsetGain);
-        cellPartitions[nodewithlargsetGain->id] = 1 - cellPartitions[nodewithlargsetGain->id];
-
-        // update the best partitions
-        gainsum += largestGain;
-
-        if (checkBalance() && gainsum >= bestgain)
+        // Set all the nodes unlocked, initialize the move gains
+        for (auto node : clusters)
         {
-            bestgain = gainsum;
-            bestcellPartitions.assign(cellPartitions.begin(), cellPartitions.end());
+            node->locked = false;
+            initializeGain(gain, node);
+            MoveCol[Pmax+gain[node->id]].addCandidateNodes(node);
         }
 
-        gaincol.push_back(largestGain);
-        gainsuffixcol.push_back(gainsum);
-        movenode.push_back(nodewithlargsetGain->leafnodecol[0]);
-    }
+        // Choose the node with the best gain, and then move and update the gains
+        int NumNodesMove = 0;
 
-    // update the best results to the cellPartitions
-    cellPartitions.assign(bestcellPartitions.begin(), bestcellPartitions.end());
-    for (int i = 0; i < Partitions.size(); i++)
-        Partitions[i].clearNodes();
-    for (int i = 0; i < cellPartitions.size(); i++)
-        Partitions[cellPartitions[i]].addNodes(clusters[i]);
+        while(NumNodesMove < clusters.size())
+        {
+            // Find the largest Gain from the bucket list
+            shared_ptr<NodeCluster> nodewithlargsetGain;
+            int largestGain;
+            int partid;
+
+            // Find the largest Gain From the top to the end
+            for(int i = 2*Pmax; i >= 0; i--)
+            {
+                if(MoveCol[i].NodeSetSize() != 0)
+                {
+                    auto candidate =  *(MoveCol[i].candidateNodes.begin());
+                    partid = cellPartitions[candidate->id];
+                    nodewithlargsetGain = candidate;
+                    largestGain = -Pmax + i;
+                    break;
+                }
+            }
+
+            // update the node locations
+            MoveCol[largestGain+Pmax].deleteCandidateNodes(nodewithlargsetGain);
+            nodewithlargsetGain->locked = true;
+            NumNodesMove++;
+
+            // update the gains
+            updateGain(gain, nodewithlargsetGain, MoveCol);
+
+            Partitions[partid].deleteNodes(nodewithlargsetGain);
+            Partitions[1-partid].addNodes(nodewithlargsetGain);
+            cellPartitions[nodewithlargsetGain->id] = 1 - cellPartitions[nodewithlargsetGain->id];
+
+            // update the best partitions
+            gainsum += largestGain;
+
+            if (checkBalance() && gainsum >= bestgain)
+            {
+                bestgain = gainsum;
+                bestcellPartitions.assign(cellPartitions.begin(), cellPartitions.end());
+            }
+
+            gaincol.push_back(largestGain);
+            gainsuffixcol.push_back(gainsum);
+            movenode.push_back(nodewithlargsetGain->leafnodecol[0]);
+        }
+
+        // bestgain > 0
+
+        if (bestgain > 0)
+        {
+            cellPartitions.assign(bestcellPartitions.begin(), bestcellPartitions.end());
+            for (int i = 0; i < Partitions.size(); i++)
+                Partitions[i].clearNodes();
+            for (int i = 0; i < cellPartitions.size(); i++)
+                Partitions[cellPartitions[i]].addNodes(clusters[i]);
+        }
+
+        bestgaincol.push_back(bestgain);
+
+        cnt++;
+
+    } while (bestgain > 0);
+
 }
 
 
@@ -254,7 +278,6 @@ void Partitioner::updateGain(vector<int>& gain, shared_ptr<NodeCluster> node, ve
     {
         int Fn;
         int Tn;
-
 
         // Get the number of the nodes of both sides
         Fn = net->partitionPinCnt[partid];
@@ -298,14 +321,14 @@ void Partitioner::updateGain(vector<int>& gain, shared_ptr<NodeCluster> node, ve
         net->partitionPin[partid].erase(node);
         net->partitionPin[1-partid].insert(node);
 
-
         // Update the Gain after the Move
         if (Fn == 0)
         {
             for(auto pin : net->pins)
             {
                 if(!pin->locked)
-                {  
+                {
+                    // std::cout<<Pmax<<" "<<gain[pin->id]<<" "<<move.size()<<std::endl;
                     move[gain[pin->id]+Pmax].deleteCandidateNodes(pin);
                     gain[pin->id]--;
                     move[gain[pin->id]+Pmax].addCandidateNodes(pin);
@@ -315,7 +338,7 @@ void Partitioner::updateGain(vector<int>& gain, shared_ptr<NodeCluster> node, ve
         else
         {
             if(Fn == 1)
-            {                    
+            {
                 auto node = *(net->partitionPin[partid].begin());
                 if(!node->locked)
                 {
